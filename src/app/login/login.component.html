@@ -1,29 +1,29 @@
 
 <div class="login-card">
-    <h1>Welcome</h1>
-    <p>Please login below:</p>
+    <h1>{{'WELCOME' | translate}}</h1>
+    <p>{{'PLEASE LOGIN BELOW' | translate}}:</p>
     <div flex>     
         <md-list >
           <md-list-item >        
             <md-input-container floatPlaceholder="auto|always|never">
-                <input mdInput name="emailControl" placeholder="Email" [(ngModel)]="email" email required>
+                <input mdInput name="emailControl" placeholder="{{'EMAIL' | translate}}" [(ngModel)]="email" email required>
                 <span mdPrefix></span>
-                <md-error>Email is required</md-error>                
+                <md-error>{{'EMAIL IS REQUIRED' | translate}}</md-error>                
                 <md-hint end></md-hint>
             </md-input-container>
           </md-list-item>
           <md-list-item >
             <md-input-container floatPlaceholder="auto|always|never">
                 <input mdInput name="password" [(ngModel)]="password" type="password" required
-                      placeholder="Password" >
+                      placeholder="{{'PASSWORD' | translate}}" >
                 <span mdPrefix></span>
-                <md-error>Password is required</md-error>
+                <md-error>{{'PASSWORD IS REQUIRED' | translate}}</md-error>
             </md-input-container>
           </md-list-item>
       </md-list>
     </div>
     <div align="end">              
-        <button md-raised-button color="accent" (click)="tryLogin()">Login</button>      
+        <button md-raised-button color="accent" (click)="tryLogin()">{{'LOGIN' | translate}}</button>      
     </div>
  
 </div>

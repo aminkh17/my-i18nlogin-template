@@ -1,4 +1,10 @@
 <md-toolbar class="fixheader" color="primary">
     <md-icon>fingerprint</md-icon>
-    <span>Login Here</span>
+    <span flex>{{'APP TITLE' | translate}} {{'PAGE TITLE' | translate}} </span>
+    <div>
+        <button md-mini-fab color="primary" (click)="swithTo()">
+            <span *ngIf="lang !== 'en'">en</span>
+            <span *ngIf="lang === 'en'">de</span>
+        </button>
+    </div>
 </md-toolbar>

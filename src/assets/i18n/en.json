@@ -1,0 +1,14 @@
+{  
+  "APP TITLE": "",
+  "PAGE TITLE": "Login Here",
+  "WELCOME" : "Welcome",
+  "PLEASE LOGIN BELOW": "Please login below",
+  "EMAIL": "Email",
+  "PASSWORD": "Password",
+  "LOGIN": "Login",
+  "EMAIL IS REQUIRED": "E-Mail ist erforderlich",
+  "PASSWORD IS REQUIRED":"Passwort wird benötigt",
+
+  "ROUTES.login": "login",
+  "ROUTES.home": "home"
+}

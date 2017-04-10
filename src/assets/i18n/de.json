@@ -1,0 +1,12 @@
+{  
+  "APP TITLE": "",
+  "PAGE TITLE": "Hier anmelden",
+  "WELCOME" : "Begrüßung",
+  "PLEASE LOGIN BELOW": "Bitte einloggen",
+  "EMAIL": "E-Mail",
+  "PASSWORD": "Passwort",
+  "LOGIN": "Anmelden",
+
+  "ROUTES.login": "anmeldung",
+  "ROUTES.home": "startseite"
+}

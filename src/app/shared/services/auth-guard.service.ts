@@ -5,12 +5,14 @@ import {
   RouterStateSnapshot, ActivatedRouteSnapshot
  } from "@angular/router";
 import { Observable } from 'rxjs/Observable';
+import { LocalizeRouterService } from "localize-router";
+import { TranslateService } from "@ngx-translate/core";
 
 
 @Injectable()
 export class AuthGuard implements CanActivate {
 
-  constructor(private authService: AuthService, private router: Router) { }
+  constructor(private authService: AuthService, private router: Router, private localize: LocalizeRouterService, private translate: TranslateService) { }
 
  
 
@@ -27,7 +29,8 @@ export class AuthGuard implements CanActivate {
     this.authService.redirectTo = url;
 
     // Navigate to the login page with extras
-    this.router.navigate(['/login']);
+//    this.router.navigate([this.authService.redirectTo]);
+    this.router.navigate([`/${this.translate.currentLang}/login`]);
     return false;
   }
 
