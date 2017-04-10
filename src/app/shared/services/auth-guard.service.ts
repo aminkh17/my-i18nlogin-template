@@ -28,9 +28,11 @@ export class AuthGuard implements CanActivate {
     // Store the attempted URL for redirecting
     this.authService.redirectTo = url;
 
+    this.localize.translateRoute('/login').subscribe((p:string) => {
+      this.router.navigate([p]);
+    });
     // Navigate to the login page with extras
-//    this.router.navigate([this.authService.redirectTo]);
-    this.router.navigate([`/${this.translate.currentLang}/login`]);
+//    this.router.navigate([`/${this.translate.currentLang}/login`]);
     return false;
   }
 

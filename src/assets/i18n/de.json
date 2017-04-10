@@ -6,6 +6,8 @@
   "EMAIL": "E-Mail",
   "PASSWORD": "Passwort",
   "LOGIN": "Anmelden",
+  "EMAIL IS REQUIRED": "Email is required",
+  "PASSWORD IS REQUIRED":"Password is required",
 
   "ROUTES.login": "anmeldung",
   "ROUTES.home": "startseite"
